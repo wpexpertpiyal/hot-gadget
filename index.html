@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <nav class="container navbar navbar-expand-lg navbar-light bg-light">
+      <div id="home"></div>
+        <nav class="container navbar navbar-expand-lg navbar-light bg-light sticky-top">
             <a class="navbar-brand" href="#">
                 <img class="logo" src="images/logo.png" alt="">
             </a>
@@ -21,16 +22,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Product</a>
+                  <a class="nav-link" href="#product">Product</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About Us</a>
+                  <a class="nav-link" href="#categories">Categories</a>
                 </li>
                 </li><li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="#contact">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -100,7 +101,7 @@
                 </a>
               </div>
         </div>
-        <section class="container smartphone-area">
+        <section id="product" class="container smartphone-area">
             <div class="sec-name-area d-flex align-items-center p-2">
                 <div class="sec-name">
                     <h2>Smartphone</h2>
@@ -191,6 +192,74 @@
                 </div>
               </div>
         </section>
+        <section id="categories" class="container category-area">
+          <h2 class="text-center c-head">Categories</h2>
+          <hr class="hr-line">
+          <div class="row category-body">
+            <div class="category-left col-md-6">
+              <div class="row">
+                <div class="c-left-left col-md-6 d-flex align-items-center justify-content-center">
+                  <div class="card">
+                    <div class="card-body">
+                      <img class="w-100" src="images/Categories/bag.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="c-left-right col-md-6">
+                  <div class="card card-margin">
+                    <div class="card-body">
+                      <img class="w-100" src="images/Categories/perfume.png" alt="">
+                    </div>
+                </div>
+                <div class="card card-margin">
+                  <div class="card-body">
+                    <img class="w-100" src="images/Categories/shoe.png" alt="">
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="category-right col-md-6 d-flex align-items-center justify-centent-center">
+              <img class="w-100" src="images/Categories/pale-order.png" alt="">
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="container contact-area">
+          <h2 class="text-center c-head">Contact Us</h2>
+          <hr class="hr-line">
+          <div class="contact-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="fName">First Name</label>
+                  <input type="text" class="form-control" id="fName" placeholder="First Name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="lName">Last Name</label>
+                  <input type="text" class="form-control" id="lName" placeholder="Last Name" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea required class="form-control" name="msg" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+              </div>
+              <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-outline-secondary contact-btn">Submit</button>
+              </div>
+            </form>
+        </div>
+        </section>
+
+        <footer class="container">
+          <div class="copyright text-center">
+            <p>&copy; Hot Gadget | All Rights Reserved By <a href="http://wpexpertpiyal.com" target="_blank">Piyal Shah</a></p>
+          </div>
+        </footer>
 
 
 
